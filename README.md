@@ -34,6 +34,46 @@ This way, if I later add audio uploads, I only need to drop a transcription step
 <img width="1386" height="863" alt="image" src="https://github.com/user-attachments/assets/56cf8617-f154-43af-a3c4-f8edcaeccdfc" />
 
 
+## Folder Structure
+
+smart-meeting-summary/
+├── backend/
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── package.json
+│   └── src/
+│       ├── server.js
+│       ├── middleware/
+│       │   └── errorHandler.js
+│       ├── routes/
+│       │   └── summarize.js
+│       └── services/
+│           ├── aiGateway.js
+│           └── summarizer.js
+│
+├── frontend/
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.js
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       ├── styles.css
+│       ├── api/
+│       │   └── summary.js
+│       └── components/
+│           ├── TranscriptInput.jsx
+│           ├── SummaryView.jsx
+│           ├── SectionCard.jsx
+│           ├── EditableText.jsx
+│           └── ActionItemsList.jsx
+│
+└── README.md
+
+
+
 ## The stack I picked
 
 - **Frontend**: React 18 + Vite + plain JavaScript + hand-written CSS. I wanted a small, dependency-light UI that's easy to read.
