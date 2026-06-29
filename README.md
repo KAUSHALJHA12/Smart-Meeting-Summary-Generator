@@ -29,6 +29,11 @@ Inside the backend I kept a clean separation of concerns:
 
 This way, if I later add audio uploads, I only need to drop a transcription step in front of `summarizeAll()` — no other code changes.
 
+## Application Preview
+
+<img width="1386" height="863" alt="image" src="https://github.com/user-attachments/assets/56cf8617-f154-43af-a3c4-f8edcaeccdfc" />
+
+
 ## The stack I picked
 
 - **Frontend**: React 18 + Vite + plain JavaScript + hand-written CSS. I wanted a small, dependency-light UI that's easy to read.
@@ -77,7 +82,6 @@ You need **Node.js 20+** and a `GEMINI_API_KEY` from Google AI Studio (server-si
 
 ```bash
 cd backend
-cp .env.example .env        # then put your GEMINI_API_KEY in .env
 npm install
 npm run dev                 # http://localhost:8787
 ```
