@@ -1,6 +1,5 @@
 # Smart-Meeting-Summary-Generator
 
-# Smart Meeting Summary Generator
 
 I built a classic two-tier JavaScript application that turns a raw meeting transcript into a structured summary with **Topics**, **Decisions**, and **Action Items** (including owners and due dates whenever they are mentioned in the transcript).
 
