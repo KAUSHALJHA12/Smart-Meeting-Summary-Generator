@@ -36,20 +36,21 @@ This way, if I later add audio uploads, I only need to drop a transcription step
 
 ## Folder Structure
 
+```text
 smart-meeting-summary/
+│
 ├── backend/
 │   ├── .env.example
 │   ├── .gitignore
 │   ├── package.json
-│   └── src/
-│       ├── server.js
-│       ├── middleware/
-│       │   └── errorHandler.js
-│       ├── routes/
-│       │   └── summarize.js
-│       └── services/
-│           ├── aiGateway.js
-│           └── summarizer.js
+│   ├── server.js
+│   ├── middleware/
+│   │   └── errorHandler.js
+│   ├── routes/
+│   │   └── summarize.js
+│   └── services/
+│       ├── aiGateway.js
+│       └── summarizer.js
 │
 ├── frontend/
 │   ├── .env.example
@@ -71,7 +72,7 @@ smart-meeting-summary/
 │           └── ActionItemsList.jsx
 │
 └── README.md
-
+```
 
 
 ## The stack I picked
